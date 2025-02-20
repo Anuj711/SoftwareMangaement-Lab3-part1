@@ -13,7 +13,7 @@ spec:
         app: binarycalculator
     spec:
       containers:
-      - name: binarycalculator
-        image: gcr.io/<your-gcp-project-id>/binarycalculator:latest
+      - image: anujshukla01/binarycalculator:latest
+        name: binarycalculator
         ports:
         - containerPort: 8080
