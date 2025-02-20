@@ -69,7 +69,7 @@ public class BinaryControllerTest {
     public void postSingleOperand() throws Exception {
         this.mvc.perform(post("/").param("operand1", "1101"))
                 .andExpect(status().isOk())
-                .andExpect(view().name("Error"));
+                .andExpect(view().name("error"));
     }
 
     //Tests for empty operand1 value resulting in the sum to be operand2
